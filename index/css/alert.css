@@ -1,0 +1,6 @@
+.cms_template_document .alert{display:none;padding:20px;position:fixed;top:50%;left:50%;width:500px;height:150px;margin-left:-250px;margin-top:-125px;border-radius:5px;z-index:999;background:#0b59b2;}
+.cms_template_document .alert h3{font-size: 18px;font-weight:bold;color:#fff;width:100%;text-align: center;}
+.cms_template_document .alert p{line-height:30px;color:#f3f3f3;font-size:16px;margin-top:15px;font-weight:bold;}
+.cms_template_document .alert .btn-a{display: flex;justify-content: space-around;align-items: center;margin-top:50px;}
+.cms_template_document .alert .btn-a a{color:#000;display: inline-block;width:100px;height:30px;background: #f3f3f3;line-height:30px;text-align: center;margin-right:30px;border-radius:5px;font-weight:bold;}
+.cms_template_document .alert .btn-a a:hover{background:#00aeff;color:#fff;}

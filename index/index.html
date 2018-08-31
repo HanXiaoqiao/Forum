@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="keywords" content="天涯,问答,标签,找人,天涯社区" />
+    <meta name="description" content="这是一个天涯社区旗下的问题分享平台。在这里您可以根据自身需求提出问题，回答、关注感兴趣的问题和话题，分享知识和经历，并与其他志趣相投的好友讨论和交流。" />
+    <title>天涯问答_天涯社区旗下的问题分享平台_天涯社区</title>
+    <script src="./js/TY.js" charset="utf-8" type="text/javascript"></script>
+    <script src="http://www.google-analytics.com/ga.js" async="" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/MobOrPc.js"></script>
+    <link href="./css/TY.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/base950.css" />
+    <script type="text/javascript" src="./js/comm.js"></script>
+    <link rel="stylesheet" href="./css/wd.css?v=1474960516109"/>
+    <link rel="stylesheet" href="./css/alert.css" />
+    <script src="js/public.js"></script>
+</head>
+<body>
+<div id="cms_template_document" class="cms_template_document">
+    <div class="alert" id="alert">
+        <h3>温馨提示</h3>
+        <p>亲爱的小主，先把你放心的交给我吧！</p>
+        <div class="btn-a">
+            <a href="./login.html" class="btn">登录</a><a href="./index.html" class="btn">取消</a>
+        </div>
+    </div>
+    <div id="cms_body" class="cms_body">
+        <!--头部导航-->
+        <div id="cms_Location_1" class="tui-950 tui-box cf">
+            <div class="tui-center cf">
+                <div class="" id="cms_control_3" fragmentid="normal-column" ftype="normal-column" fragmenturl="/cms_fragments/dynamicFragments/normal_frame_60.htm" groupid="undefined" templatename="undefined">
+                    <div class="tui-list-box tui-section space cf  navBar mt15" ftype="normal-column">
+                        <div class="hd">
+                            <h2>栏目名称</h2>
+                            <span><a href="#" target="_blank"></a></span><span><em class="emtext"></em></span>
+                        </div>
+                        <div class="bd cf">
+                            <div class="" id="cms_control_4" fragmentid="static_text_link_359" ftype="static_html" fragmenturl="" groupid="undefined" templatename="undefined">
+                                <div id="cms_nav_5" style="" ftype="static-text-link" class="tui-text-list cf" columnnbr="0" fragmentid="static_text_link_359">
+                                    <ul class="menu">
+                                        <li style="clear:none; float:left;"><a href="./index.html" class="">首页</a></li>
+                                        <li style="clear:none; float:left;"><a href="#" class="">问题</a></li>
+                                        <li style="clear:none; float:left;"><a href="javascript:void(0)" id="myPage">我的主页</a></li>
+                                        <li style="clear:none; float:left;"><a href="javascript:;" class="newQ">我要提问</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--搜索框-->
+        <div id="cms_Location_2" class="tui-950 tui-box cf">
+            <div class="tui-center cf">
+                <div class="" id="cms_control_6" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                    <div class="serachBar">
+                        <div class="l serachBar_t"></div>
+                        <div class="l serachBar_inp">
+                            <form action="" method="get" target="_blank">
+                                <input type="text" name="q" value="" class="searchInp" id="SearchKeyWord" placeholder="搜索问题、标签或人" autocomplete="off">
+                                <input type="text" value="只是屏蔽默认回车事件" style="display:none;" />
+                                <input type="button" class="searchBtn" value=" ">
+                            </form>
+                            <div class="searchAbout">
+                                <div class="serachAbout_box sb1"></div>
+                                <div class="serachAbout_box sb2"></div>
+                                <div class="serachAbout_box sb3"></div>
+                                <div class="serachAbout_box sb4"><a href="javascript:void(0)" class="search_more" style="display:none">查看全部搜索结果</a></div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="cms_Location_4" class="tui-950 tui-box cf">
+            <div class="tui-center cf">
+                <div class="" id="cms_control_11" fragmentid="static-mulit-column" ftype="static_html" fragmenturl="undefined" groupid="undefined" templatename="undefined">
+                    <div id="cms_nav_12" ftype="static_html" class="cf" stype="static-mulit-column" fragmentid="static-mulit-column" parmamter="width" target="style">
+                        <!--选项卡菜单-->
+                        <div class="mulit-column mulit-column-not-h-last mulit-column-l" style="width:660px">
+                            <div class="mbd">
+                                <div class="ui-draggable-dragging" id="cms_control_13" fragmentid="static-tab-column" ftype="static_html" fragmenturl="undefined" groupid="undefined" templatename="undefined">
+                                    <div eventtype="click" id="cms_nav_14" class="tui-tabsection cf  leftTab" ftype="static_html" ctype="static-tab-column-fragment" fragmentid="static-tab-column">
+                                        <!--选项卡栏目-->
+                                        <div class="hd"> <a href="http://wenda.tianya.cn/manager.jsp" target="_blank" class="btn adminBtn">后台管理</a>
+                                            <ul>
+                                                <li order="0" style="cursor: default;" class="tabon"><a href="javascript:void(0);" target="">热门问答</a></li>
+                                                <li order="1" style="cursor: default;" class="taboff tabNew"><a href="javascript:void(0);" target="">最新问题</a></li>
+                                                <li order="2" style="cursor: default;" class="taboff tabZ"><a href="javascript:void(0);" target="">零回答</a></li>
+                                                <li order="3" style="cursor: default;" class="orange  taboff"><a href="javascript:void(0);" target="">打赏榜</a></li>
+                                                <li order="4" style="cursor: default;" class="orange  taboff"><a href="javascript:void(0);" target="">悬赏榜</a></li>
+                                            </ul>
+                                        </div>
+                                        <!--选项卡内容-->
+                                        <div class="static-tab-column-bd ">
+                                            <div style="" class="bd">
+                                                <div class="tui-pic-text pic-text-line leftTabCon1 li-1 pic-l" id=cms_fragment_140 onclick="javascript:void(0)">
+                                                    <ul id="cms_fragment_140_ul" class="cf">
+                                                    </ul>
+                                                </div>
+                                                <div class="" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                                                    <ul class="page_box" data-tab="" data-max=100>
+                                                        更多
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div style="display: none;" class="bd">
+                                                <div class="tui-topnews f20 topnews_lin leftTabCon2 tabNew " onclick="javascript:void(0)">
+                                                    <ul id="newAnswer">
+                                                        <li class="cf aid0 ">
+                                                            <div class="summary">
+                                                                <span desc="摘要"><a href=# class=favStar></a><h3><a desc=标题 href="" title=天涯哪个版块发小说帖最容易被编辑看到呢？哈哈哈? class=title_pk0 target=_blank >天涯哪个版块发小说帖最容易被编辑看到呢？哈哈哈?<span> </span></a></h3><div class=s_tag_out><div class=s_tag></div><div class=s_tag_hide>[娱乐, 生活, 家庭]</div><div class=s_tag_link_hide>[358f4b0e25d5c044, 0467cc31d8f68be1, 0dd42fa4db1921ae]</div></div><div class=s_name><span class=t>2018-06-22 11:26:46</span><span class=u><a target=_blank class=rank200  href="">何小以</a></span></div><span class=s_reply data-a=a2 data-b=b1><a target=_blank    href=""> <b>2</b> <span>回答</span> </a> </span></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="" id="cms_control_252" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                                                    <ul class="page_box" data-tab="new" data-max=100>
+                                                        更多
+                                                    </ul>
+                                                    <!-- freemarker_end_tag -->
+                                                </div>
+                                            </div>
+                                            <div style="display: none;" class="bd">
+                                                <div class="tui-topnews f20 topnews_lin leftTabCon2  tabZero " onclick="javascript:void(0)">
+                                                    <ul id="zoomP">
+                                                    </ul></div>
+                                                <div class="" id="cms_control_253" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                                                    <ul class="page_box" data-tab="zero" data-max=100>
+                                                        更多
+                                                    </ul>
+                                                    <!-- freemarker_end_tag -->
+                                                </div>
+                                            </div>
+                                            <div style="display: none;" class="bd">
+                                                <div class="tui-topnews f20 topnews_lin leftTabCon4  daShang " onclick="javascript:void(0)">
+                                                    <ul id="tabOff">
+                                                        <li class="cf aid0 ">
+                                                            <div class="summary">
+                                                                <span desc="摘要"><div class=l><a target=_blank type=1  href=1chcs0hchfq873aduoojdv7p0ks6tf9lvsg5q title=Angelababy杨颖QQ号码多少？要真的哦！? desc=标题>《Angelababy杨颖QQ号码多少？要真的哦！?》</a> <span><a target=_blank href=http://wenda.tianya.cn/user/113144225>likeuuww</a> 打赏给 <a target=_blank href=http://wenda.tianya.cn/user/125175625>小强享受</a></span></div><div class=r_t>2018-07-02 14:57:46</div><div class=r><span class=s>100</span>赏金</div></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cf aid0 ">
+                                                            <div class="summary">
+                                                                <span desc="摘要"><div class=l><a target=_blank type=1  href=1cgrh4epmdh8crd3njn8dcmf2ljdm3f8gkgfa title=重庆时时彩微信下注群拉我玩? desc=标题>《重庆时时彩微信下注群拉我玩?》</a> <span><a target=_blank href=http://wenda.tianya.cn/user/136649344>微de6634</a> 打赏给 <a target=_blank href=http://wenda.tianya.cn/user/136601943>de6634</a></span></div><div class=r_t>2018-06-30 16:25:14</div><div class=r><span class=s>1000</span>赏金</div></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                            </div>
+                                                        </li>
+                                                        <li class="cf aid0 ">
+                                                            <div class="summary">
+                                                                <span desc="摘要"><div class=l><a target=_blank type=1  href=1cgrh4epmdh8crd3njn8dcmf2ljdm3f8gkgfa title=重庆时时彩微信下注群拉我玩? desc=标题>《重庆时时彩微信下注群拉我玩?》</a> <span><a target=_blank href=http://wenda.tianya.cn/user/136649344>微de6634</a> 打赏给 <a target=_blank href=http://wenda.tianya.cn/user/136601943>de6634</a></span></div><div class=r_t>2018-06-30 16:24:40</div><div class=r><span class=s>1000</span>赏金</div></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                            </div>
+
+                                                        </li>
+                                                        <li class="cf aid0 last-line">
+                                                            <div class="summary">
+                                                                <span desc="摘要"><div class=l><a target=_blank type=1  href=1cgh0i4or9gbdri2btcl8vg9epn2b7sl9iids title=重庆时时彩下注微信群谁有？ desc=标题>《重庆时时彩下注微信群谁有？》</a> <span><a target=_blank href=http://wenda.tianya.cn/user/136601943>de6634</a> 打赏给 <a target=_blank href=http://wenda.tianya.cn/user/121551073>冷落的猪</a></span></div><div class=r_t>2018-06-25 21:06:09</div><div class=r><span class=s>100</span>赏金</div></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                            </div>
+                                                        </li>
+                                                    </ul></div>
+                                                <div class="" id="cms_control_254" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                                                    <ul class="page_box" data-tab="dashang" data-max=15>
+                                                        更多
+                                                    </ul>
+                                                    <!-- freemarker_end_tag -->
+                                                </div>
+                                            </div>
+                                            <div style="display: none;" class="bd">
+                                                <div class="tui-topnews f20 topnews_lin leftTabCon4  xuanShang " onclick="javascript:void(0)">
+                                                    <ul id="tabE">
+                                                    </ul></div>
+                                                <div class="" id="cms_control_255" ftype="static_freemarkerCode" fragmentid="0" fragmenturl="" isfavor="0" groupid="undefined">
+                                                    <ul class="page_box" data-tab="xuanshang" data-max=12>
+                                                        更多
+                                                    </ul>
+                                                    <!-- freemarker_end_tag -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mulit-column mulit-column-not-h-last" style="width: 0px;">
+                            <div class="mbd"></div>
+                        </div>
+                        <!--右边栏目内容-->
+                        <div class="mulit-column " style="width:266px">
+                            <div class="mbd">
+                                <div class="" id="cms_control_18" fragmentid="normal-column" ftype="normal-column" fragmenturl="" groupid="undefined" templatename="undefined">
+                                    <div class="tui-list-box tui-section space cf rightBox mt15" ftype="normal-column">
+                                        <div class="hd">
+                                            <h2>线上活动</h2>
+                                            <span><a href="" target="_blank">更多</a></span><span><em class="emtext"></em></span></div>
+                                        <div style="" class="bd cf">
+                                            <div class="tui-topnews f20 topnews_lin " onclick="javascript:void(0)">
+                                                <ul>
+                                                    <li class="cf aid0 ">
+                                                        <h3><a desc="标题" href="" title="穿越回毕业，你最想做的事？" target=_blank>穿越回毕业，你最想做的事？</a></h3>
+                                                        <div class="summary">
+                                                            <span desc="摘要">即刻--2017年7月31日</span><span class="sumLink"><a title="穿越回毕业，你最想做的事？" desc="详细" href="" target=_blank></a></span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cf aid0 ">
+                                                        <h3><a desc="标题" href="" title="何为聪明的人？如何成为一个“聪明" target=_blank>何为聪明的人？如何成为一个“聪明</a></h3>
+                                                        <div class="summary">
+                                                            <span desc="摘要">即刻-2016年12月18日</span><span class="sumLink"><a title="何为聪明的人？如何成为一个“聪明" desc="详细" href="" target=_blank></a></span>
+                                                        </div>
+                                                    </li>
+                                                    <li class="cf aid0 last-line">
+                                                        <h3><a desc="标题" href="" title="当同事抢走了你的订单，你会选择怎" target=_blank>当同事抢走了你的订单，你会选择怎</a></h3>
+                                                        <div class="summary">
+                                                            <span desc="摘要">2016年9月7日-9月20日</span><span class="sumLink"><a title="当同事抢走了你的订单，你会选择怎" desc="详细" href="" target=_blank></a></span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="" id="cms_control_212" fragmentid="normal-column" ftype="normal-column" fragmenturl="/cms_fragments/dynamicFragments/normal_frame_60.htm" groupid="undefined" templatename="undefined">
+                                    <div class="tui-list-box tui-section space cf rightBox mt15 rightRank" ftype="normal-column">
+                                        <div class="hd">
+                                            <h2>问答牛人</h2>
+                                            <span><a id="more" href="#" target="_blank"></a></span><span><em class="emtext"></em></span></div>
+                                        <div style="" class="bd cf">
+                                            <div class="" id="cms_control_213" fragmentid="static-tab-column" ftype="static_html" fragmenturl="undefined" groupid="undefined" templatename="undefined">
+                                                <div eventtype="mouseover" id="cms_nav_215" class="tui-tabsection cf " ftype="static_html" ctype="static-tab-column-fragment" fragmentid="static-tab-column">
+                                                    <div class="hd">
+                                                        <ul>
+                                                            <li order="0" style="cursor: default;" class="tabon"><a href="javascript:void(0);" target="">赏金榜</a></li>
+                                                            <li order="1" style="cursor: default;" class="taboff"><a href="javascript:void(0);" target="">答人榜</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="static-tab-column-bd ">
+                                                        <div style="" class="bd">
+                                                            <div class="tui-topnews f20 topnews_lin " onclick="javascript:void(0)">
+                                                                <ul>
+                                                                    <li class="cf aid0 ">
+                                                                        <div class="showSubTitle subTitleCenter"><span class="subject2"><a title="" desc="副标题" class="sub1" href="" target=_blank></a></span></div>
+                                                                        <div class="summary">
+                                                                            <span desc="摘要"><span class=l><a href=""><i></i>加我加我</a></span><span class=r>2472</span></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="cf aid0 ">
+                                                                        <div class="showSubTitle subTitleCenter"><span class="subject2"><a title="" desc="副标题" class="sub1" href="" target=_blank></a></span></div>
+                                                                        <div class="summary">
+                                                                            <span desc="摘要"><span class=l><a href=""><i></i>不一样的烟火</a></span><span class=r>2150</span></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div style="display: none;" class="bd">
+                                                            <div class="tui-topnews f20 topnews_lin " onclick="javascript:void(0)">
+                                                                <ul>
+                                                                    <li class="cf aid0 ">
+                                                                        <div class="showSubTitle subTitleCenter"><span class="subject2"><a title="" desc="副标题" class="sub1" href="" target=_blank></a></span></div>
+                                                                        <div class="summary">
+                                                                            <span desc="摘要"><span class=l><a href=""><i></i>加加加加加加我</a></span><span class=r>36100</span></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="cf aid0 ">
+                                                                        <div class="showSubTitle subTitleCenter"><span class="subject2"><a title="" desc="副标题" class="sub1" href="" target=_blank></a></span></div>
+                                                                        <div class="summary">
+                                                                            <span desc="摘要"><span class=l><a href=""><i></i>流年乱尽绞</a></span><span class=r>9250</span></span><span class="sumLink"><a title="" desc="详细" href="" target=_blank></a></span>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="" id="cms_control_23" fragmentid="normal-column" ftype="normal-column" fragmenturl="/cms_fragments/dynamicFragments/normal_frame_60.htm" groupid="undefined" templatename="undefined">
+                                    <div class="tui-list-box tui-section space cf  rightBox mt15" ftype="normal-column">
+                                        <div class="hd">
+                                            <h2>问答公告</h2>
+                                            <span><a href="#" target="_blank"></a></span><span><em class="emtext"></em></span></div>
+                                        <div style="" class="bd cf">
+                                            <div class="tui-text-list f14 li-dot cf        li-1" onclick="javascript:void(0)">
+                                                <ul id="cms_fragment_147_ul">
+                                                    <li class="aid2970259 cf">
+                                                        <h3><a desc="标题" href="" title="加入“天涯行家”，造福你我他" target=_blank id="cms_fragment_147_1_title" >加入“天涯行家”，造福你我他</a></h3>
+                                                    </li>
+                                                    <li class="aid2970256 cf">
+                                                        <h3><a desc="标题" href="" title="天涯社区【悬赏】的使用说明" target=_blank id="cms_fragment_147_2_title" >天涯社区【悬赏】的使用说明</a></h3>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部内容-->
+    <div id="cms_foot" class="cms_foot cf">
+        <div class="" id="cms_control_162" fragmentid="_cms_ty-copyright" ftype="static-copyright" fragmenturl="" groupid="undefined" templatename="undefined">
+            <div class="tui-950 tui-box cf" id="footer1">
+                <div class="" id="sns-operation" ftype="static_operation" innerfragmentid="cms_ty_foot_216">
+                    <div class="copyright">社区运营：<a href="" target="_blank">英子</a> <a href="" target="_blank">薇薇</a> <a href="" target="_blank">跳舞的小蜗牛</a>
+                        <br> 联系电话：010-12150201　 E-mail: dewfsfs@staff.tianya.cn</div>
+                </div>
+                <div class="copyrightJS" rtype="replace-copyright">
+                    <script type="text/javascript" charset="gb2312" src=""></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/index.js"></script>
+</body>
+</html>

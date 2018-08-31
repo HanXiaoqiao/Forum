@@ -1,0 +1,31 @@
+.img{display:flex;justify-content: center;}
+.img img{width:970px;}
+.art-content{width:970px;margin:2% auto;}
+.art-content h5{font-size:14px;font-weight:bold;}
+.art-content .art-content-des{display: flex;justify-content: center;flex-wrap: wrap;}
+.art-content .art-content-des .art-title{background: #4178b0;font-size:18px;color:#fff;display: inline-block;padding:10px;margin:15px 0;}
+.art-content .art-content-des .art-info{width:100%;display: flex;justify-content: center;align-items: center;}
+.art-content .art-content-des .art-info p{margin:0 10px;}
+.art-content .art-content-des .art-nr{line-height:30px;text-indent: 2em;margin-top:10px;font-size:14px;}
+.art-content .art-content-des .art-share{display:flex;justify-content:flex-end;width:100%;margin-top:15px;}
+.art-content .art-content-des .art-share a{color:#4178b0;}
+.art-content .art-content-des .art-share a:hover{color:green;font-weight: bold;}
+
+.countAll{background: #eee;margin-top:20px;border-radius:10px;padding:3%;}
+.countAll .countTitle{font-size:16px;font-weight:bold;margin-bottom: 35px;}
+.countAll .countIndex01{border-bottom: 1px solid #ccc;}
+.countAll .countIndex01 .user-info{display:flex;justify-content: flex-start;align-items: center;}
+.countAll .countIndex01 .user-info .user-img{width:30px;height:30px;border-radius:50%;overflow: hidden;margin-right:10px;}
+.countAll .countIndex01 .user-info .user-img img{width:100%;}
+.countAll .countIndex01 .user-info .user-name{margin-right:20px;color:#0b59b2;}
+.countAll .countIndex01 .count-content{font-size:16px;margin-top:10px;text-indent: 2em;line-height:30px;}
+.countAll .countIndex01 .count-btn{display:flex;width:100%;justify-content: flex-end;margin:10px 0;color:#888;font-size:12px;}
+.countAll .countIndex01 .count-btn a{color:#888;}
+.countAll .countIndex01 .count-btn a:hover{color:#0b59b2;}
+
+.countInput{margin:20px 0 100px;}
+.countInput textarea{width:100%;border-radius:10px;margin-top:20px;font-size:16px;line-height: 30px;text-indent:2em;}
+.countInput h3{font-size:18px;}
+.countInput .btn-textarea{display:block;width:200px;height:50px;background: #4178b0;border-radius: 5px;line-height: 50px;text-align: center;color:#fff;font-size:16px;font-weight:bold;float:right;letter-spacing:5px;}
+.mess{text-align: center;color:red;font-weight:bold;}
+

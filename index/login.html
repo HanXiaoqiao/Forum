@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <link rel="stylesheet" href="./css/page.css" />
+    <link href="./css/TY.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/base950.css" />
+    <link rel="stylesheet" href="./css/wd.css?v=1474960516109"/>
+    <link rel="stylesheet" href="./css/login.css" />
+</head>
+<script src="js/jquery.js"></script>
+<script>
+    function barter_btn(bb) {
+        $(bb).parent().parent().parent().css("display","none");
+        $(bb).parent().parent().parent().siblings().css("display","block");
+    }
+</script>
+<script src="js/login.js"></script>
+<body class="Login">
+<div class="Login_k">
+    <div id="log">
+        <div class="Login_T">密码登录<p></p></div>
+        <!--登录-开始-->
+        <div class="Login_dl">
+            <div class="colWarning"></div>
+            <div class="Login_row">
+                <input name="username" type="text" value="" class="Login_input Login_inp1" placeholder="用户名" />
+            </div>
+            <div class="Login_row">
+                <input name="password" type="password" value="" class="Login_input Login_inp2" placeholder="密码" />
+            </div>
+            <a href="javascript:;" class="Login_dla" id="login">登录</a>
+
+            <label class="Login_pitch fl">
+                <input type="checkbox" name="checkbox01" class=" fl" /><div class="fl">自动登录</div><div class="clear"></div>
+            </label>
+            <div class="Login_wj fr">
+                <a href="#">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onClick="javascript:barter_btn(this)">注册</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <!--登录-结束-->
+    </div>
+    <div id="reg">
+        <div class="Login_T reg_T">用户注册<p></p></div>
+        <!--注册-开始-->
+        <div class="Login_dl">
+            <div class="colWarning"></div>
+            <div class="Login_row">
+                <input name="username" type="text" value="" class="Login_input Login_inp1" placeholder="用户名" />
+            </div>
+            <div class="Login_row">
+                <input name="password" type="password" value="" class="Login_input Login_inp2" placeholder="设置密码" />
+            </div>
+            <div class="Login_row">
+                <input name="repassword" type="password" value="" class="Login_input Login_inp2" placeholder="重新输入密码" />
+            </div>
+            <a href="javascript:;" class="Login_dla" id="register">注册</a>
+
+            <div class="Login_wj fr">
+                <a href="#">忘记密码</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#" onClick="javascript:barter_btn(this)">登录</a>
+            </div><div class="clear"></div>
+        </div>
+        <!--注册-结束-->
+    </div>
+    <!--底部内容-->
+    <div id="Login_foot" class="Login_foot">
+        <div class="">
+            <div>社区运营：<a href="" target="_blank">英子</a> <a href="" target="_blank">薇薇</a> <a href="" target="_blank">跳舞的小蜗牛</a>
+                <br> 联系电话：010-12150201　 E-mail: dewfsfs@staff.tianya.cn</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

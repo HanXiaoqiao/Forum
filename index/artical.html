@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>问题页</title>
+    <link rel="stylesheet" href="./css/page.css" />
+    <link href="./css/TY.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="./css/base950.css" />
+    <link rel="stylesheet" href="./css/wd.css?v=1474960516109"/>
+    <link rel="stylesheet" href="./css/artical.css" />
+    <link rel="stylesheet" href="./css/alert.css" />
+</head>
+<body>
+<div id="cms_template_document" class="cms_template_document">
+    <div class="alert" id="alert">
+        <h3>温馨提示</h3>
+        <p>亲爱的小主，先把你放心的交给我吧！</p>
+        <div class="btn-a">
+            <a href="./login.html" class="btn">登录</a><a href="./index.html" class="btn">取消</a>
+        </div>
+    </div>
+    <div id="cms_body" class="cms_body">
+        <!--头部导航-->
+        <div id="cms_Location_1" class="tui-950 tui-box cf">
+            <div class="tui-center cf">
+                <div class="" id="cms_control_3" fragmentid="normal-column" ftype="normal-column" fragmenturl="/cms_fragments/dynamicFragments/normal_frame_60.htm" groupid="undefined" templatename="undefined">
+                    <div class="tui-list-box tui-section space cf  navBar mt15" ftype="normal-column">
+                        <div class="hd">
+                            <h2>栏目名称</h2>
+                            <span><a href="#" target="_blank"></a></span><span><em class="emtext"></em></span>
+                        </div>
+                        <div class="bd cf">
+                            <div class="" id="cms_control_4" fragmentid="static_text_link_359" ftype="static_html" fragmenturl="" groupid="undefined" templatename="undefined">
+                                <div id="cms_nav_5" style="" ftype="static-text-link" class="tui-text-list cf" columnnbr="0" fragmentid="static_text_link_359">
+                                    <ul class="menu">
+                                        <li style="clear:none; float:left;"><a href="./index.html" class="">首页</a></li>
+                                        <li style="clear:none; float:left;"><a href="#" class="">问题</a></li>
+                                        <li style="clear:none; float:left;"><a href="javascript:void(0)" id="myPage">我的主页</a></li>
+                                        <li style="clear:none; float:left;"><a href="javascript:;" class="newQ">我要提问</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img">
+        <img src="./images/ad.jpg" alt="">
+    </div>
+    <div class="art-content">
+        <h5><a href="index.html">天涯问答</a>&nbsp;&gt;&nbsp;<a href="#" class="a-title">{{title}}</a></h5>
+        <div class="art-content-des">
+            <span class="art-title">我想问降准后物价会上涨很厉害么?我十万存款会不会突然就买不了什么东西了</span>
+            <div class="art-info">
+                <p class="name">楼主：<a href="">woaideren</a></p>
+                <p class="time">时间：<span class="artTime">2018-05-06 22:12:56</span></p>
+                <p class="see">浏览：<span>213</span></p>
+                <p class="count">回复：<span>14</span></p>
+            </div>
+            <div class="art-nr">
+                降准→房价上涨→人民币贬值→我想问物价上涨还是下跌→存在银行的钱会不会一下子贬值到没什么购买了了，还是购买力上升罚款警方八度空间和罚款和覅的活佛i啊恢复看风景卡的诺福克樊辣椒佛i期间哦i发言人黄芙蓉王i傲娇批发去开房及全集佛强迫啊啊就发哦看见父亲哦i额麻烦啦吗v可能大家客户四
+            </div>
+            <div class="art-share">
+                <a href="javascript:;">分享</a>&nbsp;|&nbsp;<a href="#answer" class="artAnswer">我要回答</a>
+            </div>
+        </div>
+        <!--评论区-->
+        <div class="countAll" id="countA">
+            <p class="countTitle">14个回答</p>
+           <!-- <div class="countIndex01">
+                <div class="user-info">
+                    <a href="" class="user-img">
+                        <img src="./images/user01.jpg" alt="" />
+                    </a>
+                    <a href="" class="user-name">udasu</a>
+                    <span class="user-time">2018-05-12 12:12:56</span>
+                </div>
+                <p class="count-content">
+                    最基本的粮食肯定是控制住了，不用担心，其它的涨价，但只是涨一阵，随后发现销量下降，价格还是会跌的。
+                </p>
+                <div class="count-btn">
+                    <a href="">举报</a>&nbsp;|&nbsp;<a href="">收藏</a>&nbsp;|&nbsp;<a href="">评论</a>
+                </div>
+            </div>-->
+        </div>
+        <div class="pagination"></div>
+        <!--评论框-->
+        <div class="countInput" id="answer">
+            <h3>我来回答</h3>
+            <div class="mess"></div>
+            <textarea class="tarea" name="answerArea" id="" cols="30" rows="5" placeholder="来帮帮ta吧"></textarea>
+            <a href="javascript:;" class="btn-textarea">提交答案</a>
+        </div>
+    </div>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/uPage.js"></script>
+    <script src="./js/page.js"></script>
+    <script src="./js/public.js"></script>
+    <script>
+        $(document).ready(function () {
+            //获取指定参数
+            function GetUrlParam(paraName) {
+                var url = document.location.toString();
+                var arrObj = url.split("?");
+
+                if (arrObj.length > 1) {
+                    var arrPara = arrObj[1].split("&");
+                    var arr;
+
+                    for (var i = 0; i < arrPara.length; i++) {
+                        arr = arrPara[i].split("=");
+
+                        if (arr != null && arr[0] == paraName) {
+                            return arr[1];
+                        }
+                    }
+                    return "";
+                }
+                else {
+                    return "";
+                }
+            }
+            var art_id = GetUrlParam("artId");
+            window.page = new pagination({
+                pagination:$('.pagination'),
+                maxPage: 5, //最大页码数,支持奇数，左右对称
+                startPage: 1,    //默认第一页
+                currentPage: 1,          //当前页码
+                totalItemCount:10,
+                totalPageCount: 2,        //总页数
+                callback:function(pageNum){
+                    $.ajax({
+                        type: 'post',
+                        url: 'http://localhost:3001/artShow',
+                        data: {
+                            art_id:art_id,
+                            page:pageNum
+                        },
+                        dataType: 'json',
+                        success: function(result){
+                            $('.countAll .countIndex01').remove();
+                            for(let val of result.countAry){
+                                $('.countAll').append(`
+                                    <div class="countIndex01">
+                                        <div class="user-info">
+                                            <a href="" class="user-img">
+                                                <img src="./images/user01.jpg" alt="" />
+                                            </a>
+                                            <a href="" class="user-name">${val.count_user}</a>
+                                            <span class="user-time">${new Date(val.count_time).Format("yyyy-MM-dd hh:mm:ss")}</span>
+                                        </div>
+                                        <p class="count-content">
+                                            ${val.count_content}
+                                        </p>
+                                        <div class="count-btn">
+                                            <a href="">举报</a>&nbsp;|&nbsp;<a href="">收藏</a>&nbsp;|&nbsp;<a href="">评论</a>
+                                        </div>
+                                    </div>`
+                                );
+                            }
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+    <script src="./js/article.js"></script>
+    <!--底部内容-->
+    <div id="cms_foot" class="cms_foot cf">
+        <div class="" id="cms_control_162" fragmentid="_cms_ty-copyright" ftype="static-copyright" fragmenturl="" groupid="undefined" templatename="undefined">
+            <div class="tui-950 tui-box cf" id="footer1">
+                <div class="" id="sns-operation" ftype="static_operation" innerfragmentid="cms_ty_foot_216">
+                    <div class="copyright">社区运营：<a href="" target="_blank">英子</a> <a href="" target="_blank">薇薇</a> <a href="" target="_blank">跳舞的小蜗牛</a>
+                        <br> 联系电话：010-12150201　 E-mail: dewfsfs@staff.tianya.cn</div>
+                </div>
+                <div class="copyrightJS" rtype="replace-copyright">
+                    <script type="text/javascript" charset="gb2312" src=""></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

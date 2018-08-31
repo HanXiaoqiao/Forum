@@ -1,0 +1,17 @@
+.img{display:flex;justify-content: center;}
+.img img{width:970px;}
+.questionAll{width:970px;margin:20px auto;}
+.questionAll h5{font-size:14px;font-weight:bold;}
+.questionAll hr{height:1px;border:none;background: #4178b0;}
+.questionAll .form{margin:0 auto;width:80%;margin-top:50px;}
+.questionAll .form .input-form{display:flex;justify-content: flex-start;align-items:center;margin:10px 0;}
+.questionAll .form .input-form span.form-t{font-size:16px;display:inline-block;width:100px;}
+.questionAll .form .input-form input{width:75%;height:30px;text-indent: 1em;}
+.questionAll .form .input-form textarea{width:75%;line-height:30px;font-size:14px;text-indent: 1em;}
+.questionAll .form .input-form select{width:15%;height:30px;}
+.questionAll .form .input-form .btn-form{display:block;width:100px;height:30px;background: #105cb6;text-align: center;line-height:30px;font-size:16px;font-weight:bold;color:#f3f3f3;}
+.questionAll .tishi{text-align: center;border-bottom: 5px solid #f3f3f3;padding-bottom: 20px;}
+.questionAll .tishi p{font-size:14px;width:100%;}
+.questionAll .tishi p a{color:#0b59b2;font-weight:bold;font-size:12px;}
+
+

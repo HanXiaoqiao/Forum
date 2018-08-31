@@ -1,0 +1,23 @@
+
+.img{display:flex;justify-content: center;}
+.img img{width:970px;}
+.myHomeAll{width:970px;margin:20px auto;}
+.myHomeAll h5{font-size:14px;font-weight:bold;}
+.myHomeAll hr{height:1px;border:none;background: #4178b0;}
+.home{display:flex;justify-content: space-between;}
+.home .countAll{width:70%;}
+.home .countAll p{font-size:16px;margin:20px 0;}
+.countAll .countIndex01{border-bottom: 1px solid #ccc;}
+.countAll .countIndex01 .user-info{display:flex;justify-content: flex-start;align-items: center;}
+.countAll .countIndex01 .user-info .user-img{width:30px;height:30px;border-radius:50%;overflow: hidden;margin-right:10px;}
+.countAll .countIndex01 .user-info .user-img img{width:100%;}
+.countAll .countIndex01 .user-info .user-name{margin-right:20px;color:#0b59b2;}
+.countAll .countIndex01 .count-content{font-size:16px;margin-top:10px;text-indent: 2em;font-weight:bold;line-height:30px;}
+.countAll .countIndex01 .count-btn{display:flex;width:100%;justify-content: flex-end;margin:10px 0;color:#888;font-size:12px;}
+.countAll .countIndex01 .count-btn a{color:#888;}
+.countAll .countIndex01 .count-btn a:hover{color:#0b59b2;}
+.myInfo{width:25%;height:300px;margin-top:20px;background: #dafaf2;padding:10px;border-radius:10px;}
+.myInfo img{width:100px;}
+.myInfo p{line-height:30px;font-size:16px;}
+.myInfo p a{font-size:12px;font-weight:bold;margin-left:15px;}
+
